@@ -1,0 +1,12 @@
+---
+layout: page
+permalink: /journal/
+title: Journal
+---
+
+
+<div id="archives">
+    {% for post in site.categories.journal %}
+    <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+   {% endfor %}   
+</div>
